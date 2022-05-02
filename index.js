@@ -17,6 +17,7 @@ botonesOperadores.forEach(botonOperador => {
     });
 });
 
+
 borrar.addEventListener( "click", () => {
     display.innerHTML = "";
 })
