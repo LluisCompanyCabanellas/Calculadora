@@ -26,5 +26,5 @@ calcular.addEventListener( "click", () => {
 })
 
 punto.addEventListener( "click", () => {
-    
+    display.innerHTML += ".";
 })
