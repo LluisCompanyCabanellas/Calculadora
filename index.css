@@ -5,7 +5,7 @@
 
 body{
     margin:0;
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgb(0, 0, 0);
 }
 
 .container{
@@ -19,10 +19,10 @@ body{
     display:grid;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows: 160px repeat(5, 75px);
-    background-color: rgb(255, 255, 255);
+    background-color: green;
     padding: 15px;
     border-radius: 32px;
-    
+    box-shadow: 15px 10px 0px 5px;
 }
 
 button{
@@ -32,11 +32,11 @@ button{
     border-radius: 32px;
     font-size: 1.5em;
     border: none;
-    background-color: rgb(0, 0, 0);
+    background-color: black;
 }
 
 button:active {
-    background-color:rgba(0, 0, 0, 0.123) ;
+    background-color:rgb(158, 29, 29) ;
 }
 
 button:focus{
@@ -54,7 +54,7 @@ button:focus{
     margin: 10px 10px 20px;
     flex-direction:column;
     align-items: flex-end;
-    background-color:#ff0000;
+    background-color:#ce0909;
     border-radius: 32px;
     text-align: right;
     justify-content: space-between;
