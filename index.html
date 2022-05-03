@@ -1,41 +1,84 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
-    <link href="index.css" rel="stylesheet"/>
-    <script src="Display.js" type="text/javascript"></script>
-    <script src="Calculadora.js" type="text/javascript"></script>
-    <script src="index.js" type="text/javascript" defer></script>
+    <title>CALCULADORA</title>
+    <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="calculadora">
-            <div class="display">
-                <div id="valor-actual"></div>
+
+    <div id = "Principal">  
+        <div id= "Calculadora">         
+            <input id="Pantalla" type="textbox" value="0" class="textbox">
+            <div id= "teclado" class="buttons">
+            <button id="ac" class="button" value="AC">AC</button>
+            <button id="borrar" class="button" value="CE">CE</button>
+            <button id="porcentaje" class="button" value="%">%</button>
+            <button id="dividir" class="button" value="/">/</button><br>
+            <button id="siete" class="button numero" value="7">7</button>
+            <button id="ocho" class="button numero" value="8">8</button>
+            <button id="nueve" class="button numero" value="9">9</button>
+            <button id="multiplicar" class="button" value="*">*</button><br>
+            <button id="cuatro" class="button numero" value="4">4</button>
+            <button id="cinco" class="button numero" value="5">5</button>
+            <button id="seis" class="button numero" value="6">6</button>
+            <button id="restar" class="button" value="-">-</button><br>
+            <button id="uno" class="button numero" value="1">1</button>
+            <button id="dos" class="button numero" value="2">2</button>
+            <button id="tres" class="button numero" value="3">3</button>
+            <button id="sumar" class="button" value="+">+</button><br>
+            <button id="punto" class="button" value=".">.</button>
+            <button id="cero" class="button numero" value="0">0</button>
+            <button id="ans" class="button" value="Ans">Ans</button>
+            <button id="igual" class="button" value="=">=</button>
             </div>
-            
-            <button class="col-2 borrar">C</button>
-            <button>&larr;</button>
-            <button class="operador" data-operador="%">%</button>
-            <button class="numero" data-numero="7">7</button>
-            <button class="numero" data-numero="8">8</button>
-            <button class="numero" data-numero="9">9</button>
-            <button class="operador"  data-operador="*">*</button>
-            <button class="numero" data-numero="4">4</button>
-            <button class="numero" data-numero="5">5</button>
-            <button class="numero" data-numero="6">6</button>
-            <button class="operador"  data-operador="-">-</button>
-            <button class="numero" data-numero="1">1</button>
-            <button class="numero" data-numero="2">2</button>
-            <button class="numero" data-numero="3">3</button>
-            <button class="operador"  data-operador="+">+</button>
-            <button class="col-2 numero" data-numero="0">0</button>
-            <button class="punto">.</button>
-            <button class="calcular">=</button>
         </div>
     </div>
+
+    <script src="js/index.js"></script>
+
+
+
+    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+// Si pulso un botón de número diferente a cero y en el display hay un cero tiene
+// que sustituirse el cero por el número pulsado. Sino debe sustituirse el valor
+// de la pantalla nuevamente por 0
+
+// Si pulso en borrar el último caracter y sólo queda un caracter en la pantalla se debe
+// sustituir por un cero el valor de la pantalla. Descubir una función de js para contar
+// el número de caracteres de una cadena de texto.
+
+// Si pulso el boton de punto y no hay ningún operador en la pantalla sólo puedo escribir un punto. En 
+// cambio si hay un operador en la pantalla entonces sólo puedo escribir dos puntos. Descubrir
+// una función que cuente cuantas veces aparece un caracter en un cadena de texto.
+
+// Si pulso un botón de operador y hay un operador en pantalla.
+// En caso de que el operador de la pantalla sea la última posición entonces:
+// - si son iguales no ocurre nada
+// - si son diferentes se sustituye
+// En caso de que la última posición de la pantalla sea un número entonces:
+// - hace el calculo y añade el operador pulsado al final
+
+
+-->
+
